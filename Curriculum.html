@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ailton Hernández Hernández | CV Web</title>
+  <!-- Google Fonts & Font Awesome -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <style>
+    :root {
+      --primary: #0284c7;
+      --primary-dark: #0369a1;
+      --dark: #0f172a;
+      --text-main: #334155;
+      --text-muted: #64748b;
+      --bg-light: #f8fafc;
+      --card-bg: #ffffff;
+      --border-color: #e2e8f0;
+      --tag-bg: #e0f2fe;
+      --tag-text: #0369a1;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Inter', sans-serif; background-color: var(--bg-light); color: var(--text-main); line-height: 1.6; }
+    a { color: var(--primary); text-decoration: none; transition: all 0.2s ease; }
+    a:hover { color: var(--primary-dark); text-decoration: underline; }
+
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+
+    /* Header / Hero */
+    header { background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); color: #ffffff; padding: 45px 0; }
+    .hero-name { font-family: 'Outfit', sans-serif; font-size: 2.3rem; font-weight: 800; line-height: 1.2; }
+    .hero-title { font-size: 1.15rem; color: #38bdf8; font-weight: 600; margin: 8px 0 16px 0; }
+    
+    .hero-links { display: flex; flex-wrap: wrap; gap: 12px; }
+    .hero-links a, .hero-links span {
+      display: inline-flex; align-items: center; gap: 8px; color: #cbd5e1;
+      font-size: 0.9rem; background: rgba(255, 255, 255, 0.08);
+      padding: 6px 14px; border-radius: 20px; border: 1px solid rgba(255, 255, 255, 0.12);
+    }
+    .hero-links a:hover { background: var(--primary); color: #fff; text-decoration: none; transform: translateY(-2px); }
+
+    /* Layout */
+    .main-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 30px; margin: 40px auto; }
+    .section-card { background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 12px; padding: 26px; margin-bottom: 24px; box-shadow: 0 2px 8px rgba(0,0,0,0.02); }
+    .section-title { font-family: 'Outfit', sans-serif; font-size: 1.3rem; color: var(--dark); margin-bottom: 18px; display: flex; align-items: center; gap: 10px; border-bottom: 2px solid #e0f2fe; padding-bottom: 8px; }
+    .section-title i { color: var(--primary); }
+
+    /* Projects */
+    .item-block { margin-bottom: 20px; padding-bottom: 16px; border-bottom: 1px dashed var(--border-color); }
+    .item-block:last-child { margin-bottom: 0; padding-bottom: 0; border-bottom: none; }
+    .item-role { font-weight: 700; font-size: 1.05rem; color: var(--dark); }
+    .item-company { font-size: 0.9rem; color: var(--primary); font-weight: 600; margin-bottom: 6px; }
+    ul.custom-list { margin-left: 20px; font-size: 0.92rem; margin-top: 6px; }
+    ul.custom-list li { margin-bottom: 4px; }
+
+    /* Tags */
+    .tags-container { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+    .tag { background: var(--tag-bg); color: var(--tag-text); font-size: 0.8rem; font-weight: 600; padding: 3px 8px; border-radius: 6px; }
+    .tag-soft { background: #f1f5f9; color: #334155; font-size: 0.8rem; font-weight: 500; padding: 3px 8px; border-radius: 6px; border: 1px solid var(--border-color); }
+
+    footer { background: var(--dark); color: #94a3b8; text-align: center; padding: 25px 20px; font-size: 0.9rem; margin-top: 40px; }
+
+    @media (max-width: 800px) {
+      .main-grid { grid-template-columns: 1fr; }
+      .hero-name { font-size: 1.8rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Encabezado -->
+  <header>
+    <div class="container">
+      <h1 class="hero-name">Ailton Hernández<br>Hernández</h1>
+      <div class="hero-title">Estudiante de Ingeniería en Sistemas Computacionales</div>
+      <div class="hero-links">
+        <span><i class="fa-solid fa-location-dot"></i> Aguascalientes, Ags., México</span>
+        <a href="mailto:ailton958hrdz@gmail.com"><i class="fa-solid fa-envelope"></i> ailton958hrdz@gmail.com</a>
+        <a href="tel:+524281103960"><i class="fa-solid fa-phone"></i> +52 (428) 110-3960</a>
+        <a href="https://github.com/AiltonHrdz" target="_blank"><i class="fa-brands fa-github"></i> GitHub (AiltonHrdz)</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Contenido -->
+  <div class="container main-grid">
+    <main>
+      <!-- Perfil -->
+      <section class="section-card">
+        <h2 class="section-title"><i class="fa-solid fa-user-tie"></i> Perfil Profesional</h2>
+        <p>
+          Estudiante de 7.° semestre de Ingeniería en Sistemas Computacionales en la Universidad Autónoma de Aguascalientes, con formación técnica previa como Técnico en Programación. Especializado en desarrollo web full stack asistido por IA, gestión de bases de datos relacionales en MySQL e implementación de infraestructura de red en entornos virtuales.
+        </p>
+      </section>
+
+      <!-- Proyectos -->
+      <section class="section-card">
+        <h2 class="section-title"><i class="fa-solid fa-laptop-code"></i> Proyectos Destacados</h2>
+
+        <div class="item-block">
+          <span class="item-role">Tienda Pokémon — Plataforma E-Commerce</span>
+          <div class="item-company">Desarrollo Web Full Stack</div>
+          <ul class="custom-list">
+            <li>Portal web de compra y venta de tarjetas con módulo de usuarios para administradores y clientes.</li>
+            <li>Gestión de productos, formulario dinámico de contacto y pagos con backend en Node.js y persistencia en MySQL.</li>
+          </ul>
+          <div class="tags-container">
+            <span class="tag">Node.js</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">HTML5</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">VS Code</span>
+          </div>
+        </div>
+
+        <div class="item-block">
+          <span class="item-role">Sistema de Control de Estacionamiento</span>
+          <div class="item-company">Desarrollo de Software & MySQL</div>
+          <ul class="custom-list">
+            <li>Software de control de espacios disponibles/ocupados, cálculo de tiempo y cobro de tarifas con soporte para múltiples administradores.</li>
+            <li>Conexión e integración directa con base de datos relacional MySQL.</li>
+          </ul>
+          <div class="tags-container">
+            <span class="tag">Java</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">POO</span>
+            <span class="tag">VS Code</span>
+          </div>
+        </div>
+
+        <div class="item-block">
+          <span class="item-role">Infraestructura de Red en Entornos Virtuales</span>
+          <div class="item-company">Redes & Servidores</div>
+          <ul class="custom-list">
+            <li>Despliegue y configuración de conexión entre servidores de empresa y usuarios mediante máquinas virtuales.</li>
+            <li>Inspección, monitoreo y análisis de tráfico de red y transferencia de paquetes.</li>
+          </ul>
+          <div class="tags-container">
+            <span class="tag">Máquinas Virtuales</span>
+            <span class="tag">Redes</span>
+            <span class="tag">Monitoreo de Tráfico</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <aside>
+      <!-- Formación -->
+      <section class="section-card">
+        <h2 class="section-title"><i class="fa-solid fa-graduation-cap"></i> Formación</h2>
+        <div class="item-block">
+          <strong style="color: var(--dark);">Ing. en Sistemas Computacionales</strong>
+          <div style="font-size: 0.9rem; color: var(--primary);">Univ. Autónoma de Aguascalientes</div>
+          <div style="font-size: 0.8rem; color: var(--text-muted);">2022 – 2027 (7.° Semestre)</div>
+        </div>
+        <div class="item-block">
+          <strong style="color: var(--dark);">Técnico en Programación</strong>
+          <div style="font-size: 0.9rem; color: var(--primary);">CECyTE Guanajuato</div>
+          <div style="font-size: 0.8rem; color: var(--text-muted);">2019 – 2022</div>
+        </div>
+      </section>
+
+      <!-- Habilidades Técnicas -->
+      <section class="section-card">
+        <h2 class="section-title"><i class="fa-solid fa-code"></i> Habilidades Técnicas</h2>
+        <div style="margin-bottom: 12px;">
+          <strong style="font-size: 0.85rem;">Lenguajes:</strong>
+          <div class="tags-container">
+            <span class="tag">C / C++</span>
+            <span class="tag">Java</span>
+            <span class="tag">JavaScript</span>
+          </div>
+        </div>
+        <div style="margin-bottom: 12px;">
+          <strong style="font-size: 0.85rem;">Frontend & Backend:</strong>
+          <div class="tags-container">
+            <span class="tag">React</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">HTML5</span>
+          </div>
+        </div>
+        <div style="margin-bottom: 12px;">
+          <strong style="font-size: 0.85rem;">Base de Datos:</strong>
+          <div class="tags-container">
+            <span class="tag">MySQL</span>
+          </div>
+        </div>
+        <div style="margin-bottom: 12px;">
+          <strong style="font-size: 0.85rem;">Herramientas & Redes:</strong>
+          <div class="tags-container">
+            <span class="tag">Git / GitHub</span>
+            <span class="tag">VS Code</span>
+            <span class="tag">Máquinas Virtuales</span>
+          </div>
+        </div>
+        <div>
+          <strong style="font-size: 0.85rem;">IA & Productividad:</strong>
+          <div class="tags-container">
+            <span class="tag">OpenAI</span>
+            <span class="tag">Gemini</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Soft Skills -->
+      <section class="section-card">
+        <h2 class="section-title"><i class="fa-solid fa-users"></i> Soft Skills</h2>
+        <div class="tags-container">
+          <span class="tag-soft">Trabajo Colaborativo</span>
+          <span class="tag-soft">Adaptabilidad</span>
+          <span class="tag-soft">Rápido Aprendizaje</span>
+          <span class="tag-soft">Pensamiento Lógico</span>
+        </div>
+      </section>
+    </aside>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>© 2026 Ailton Hernández Hernández • CV Web</p>
+    </div>
+  </footer>
+
+</body>
+</html>
